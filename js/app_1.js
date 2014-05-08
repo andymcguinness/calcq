@@ -62,24 +62,72 @@ app_1.controller('CalcCtrl', function($scope){
     $scope.plus = function() {
         if ($scope.operation === 'equals') {
             $scope.clear_stored();
+        } else if ($scope.operation === 'minus') {
+            $scope.clean_stored_entry();
+
+            if ($scope.current_entry[0] != '0' && $scope.current_entry[1] != ''){
+                for (var i = 0; i < $scope.current_entry.length; i++) {
+                    $scope.stored_entry.push($scope.current_entry[i]);
+                }
+            }
+            $scope.tally -= parseFloat($scope.current_entry.join(''));
+            $scope.clear_current();
+        } else {
+            //
         }
 
         $scope.clean_stored_entry();
 
-        for (var i = 0; i < $scope.current_entry.length; i++) {
-            $scope.stored_entry.push($scope.current_entry[i]);
+        if ($scope.current_entry[0] != '0' && $scope.current_entry[1] != ''){
+            for (var i = 0; i < $scope.current_entry.length; i++) {
+                $scope.stored_entry.push($scope.current_entry[i]);
+            }
         }
         $scope.tally += parseFloat($scope.current_entry.join(''));
 
-        console.log($scope.tally)
         $scope.stored_entry.push(' + ');
         $scope.clear_current();
         $scope.operation = 'plus';
     }
 
+    $scope.minus = function() {
+        if ($scope.operation === 'equals') {
+            $scope.clear_stored();
+        } else if ($scope.operation === 'plus') {
+            $scope.clean_stored_entry();
+
+            if ($scope.current_entry[0] != '0' && $scope.current_entry[1] != ''){
+                for (var i = 0; i < $scope.current_entry.length; i++) {
+                    $scope.stored_entry.push($scope.current_entry[i]);
+                }
+            }
+            $scope.tally += parseFloat($scope.current_entry.join(''));
+            $scope.clear_current();
+        } else {
+            //
+        }
+
+        $scope.clean_stored_entry();
+
+        if ($scope.current_entry[0] != '0' && $scope.current_entry[1] != ''){
+            for (var i = 0; i < $scope.current_entry.length; i++) {
+                $scope.stored_entry.push($scope.current_entry[i]);
+            }
+        }
+        $scope.tally -= parseFloat($scope.current_entry.join(''));
+
+        $scope.stored_entry.push(' - ');
+        $scope.clear_current();
+        $scope.operation = 'minus';
+    }
+
     $scope.equals = function() {
         if ($scope.operation === 'plus') {
             $scope.plus();
+        } else if ($scope.operation === 'minus') {
+            $scope.minus();
+        } else {
+            //
         }
 
         $scope.operation = 'equals';
