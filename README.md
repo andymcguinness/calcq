@@ -1,4 +1,4 @@
-# calcq
+# C4LC-Q-L8R
 
 A small calculator app built with AngularJS, drum 'n' bass, and Diet Coke.
 
@@ -22,4 +22,4 @@ MIT. Or something. I mean if you really wanna use it, feel free.
 
 ## And you are?
 
-[Maia McGuinness](//maiamcguinness.com). I build stuff. 'N' stuff.
+[Maia McGuinness](http://maiamcguinness.com). [I build stuff](//github.com/maiamcguinness). 'N' stuff.
