@@ -15,9 +15,12 @@ A simple calculator is less cliche than a to-do list app, but it still poses som
 - Drum 'n' Bass x 2 premade Spotify playlists
 - CSS Reset x 1 file
 - Normalize.css x 1 file
-+ JavaScript x 139 lines
-+ CSS x 108 lines
-+ HTML x 67 lines
+
+* * *
+
+- JavaScript x 139 lines
+- CSS x 108 lines
+- HTML x 67 lines
 
 ## Copyright?
 
