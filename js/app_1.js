@@ -7,6 +7,11 @@ app_1.controller('CalcCtrl', function($scope){
     $scope.operation = ''; // haven't done any math yet!
 
     $scope.number_push = function(entered_entry) {
+        if ($scope.operation == 'equals') {
+            $scope.clear_current();
+            $scope.operation = '';
+        }
+
         if ($scope.current_entry[0] === '0') {
             $scope.current_entry[0] = entered_entry;
         } else {
@@ -79,7 +84,7 @@ app_1.controller('CalcCtrl', function($scope){
 
         $scope.operation = 'equals';
         $scope.clear_stored();
-        $scope.stored_entry[0] = $scope.tally;
+        $scope.current_entry[0] = $scope.tally;
 
         $scope.clear_tally();
     }
