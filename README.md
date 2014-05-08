@@ -22,4 +22,4 @@ MIT. Or something. I mean if you really wanna use it, feel free.
 
 ## And you are?
 
-[Maia McGuinness](maiamcguinness.com). I build stuff. 'N' stuff.
+[Maia McGuinness](//maiamcguinness.com). I build stuff. 'N' stuff.
