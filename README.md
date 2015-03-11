@@ -28,4 +28,4 @@ MIT. Or something. I mean if you really wanna use it, feel free. Not liable for 
 
 ## And you are?
 
-[Maia McGuinness](http://maiamcguinness.com). [I build stuff](//github.com/maiamcguinness). 'N' stuff.
+[Andy McGuinness](http://andymcguinness.com). [I build stuff](//github.com/andymcguinness). 'N' stuff.
